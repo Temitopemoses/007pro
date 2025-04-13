@@ -1,0 +1,118 @@
+/* Base Reset */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section spacing */
+section {
+  padding: 60px 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #facc15; /* Gold tone */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.navbar-brand {
+  color: #facc15 !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #f8f9fa !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #facc15 !important;
+}
+
+/* Cards */
+.card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(250, 204, 21, 0.2);
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: #facc15;
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-warning:hover {
+  background-color: #eab308;
+  color: #000;
+}
+
+/* Carousel */
+.carousel .carousel-item p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1f1f1f;
+  color: #aaa;
+}
+
+/* Form */
+form label {
+  color: #facc15;
+}
+
+form input,
+form textarea {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #facc15;
+  box-shadow: 0 0 5px rgba(250, 204, 21, 0.4);
+}
+
+.text-spy-gold {
+  color: #d4af37;
+}
+
+.text-spy-silver {
+  color: #c0c0c0;
+}
+
+.border-spy-gold {
+  border-color: #d4af37;
+}
+
+.hover\:text-spy-gold:hover {
+  color: #d4af37;
+}
+
+.hover\:bg-spy-gold:hover {
+  background-color: #d4af37;
+}
+
+.hover\:text-dark:hover {
+  color: #000;
+}
+

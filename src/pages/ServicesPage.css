@@ -1,0 +1,43 @@
+/* Cyberpunk Effects */
+.cyber-hero {
+    background: radial-gradient(ellipse at bottom, #121212 0%, #000 100%);
+  }
+  
+  .cyber-grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      linear-gradient(rgba(212, 175, 55, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212, 175, 55, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  .cyber-glitch {
+    position: relative;
+    color: white;
+  }
+  .cyber-glitch::before, .cyber-glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .cyber-glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+  }
+  .cyber-glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim2 5s infinite linear alternate-reverse;
+  }
+  
+  /* Add remaining CSS for animations, service cards, etc */

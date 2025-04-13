@@ -1,0 +1,83 @@
+body {
+  background-color: #121212;
+  color: #f8f9fa;
+  font-family: 'Verdana', sans-serif;
+}
+
+a, a:hover {
+  color: #facc15;
+  text-decoration: none;
+}
+.active-link {
+  position: relative;
+  font-weight: 500;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #d4af37;
+  transition: all 0.3s ease;
+}
+.cyber-grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(212, 175, 55, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.navbar-toggler-icon.open {
+  transform: rotate(90deg);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.hover-text-spy-gold:hover {
+  color: #d4af37 !important;
+}
+
+.hover-bg-spy-gold:hover {
+  background-color: #d4af37 !important;
+}
+/* Add to your CSS file */
+.bg-spy-gold { background-color: #d4af37; }
+.hover-bg-spy-gold-dark:hover { background-color: #b5942b; }
+.border-spy-gold { border-color: #d4af37; }
+
+.hero-image-container {
+  transition: all 0.3s ease;
+}
+.hero-image-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+/* Custom gold colors */
+:root {
+  --spy-gold: #d4af37;
+  --spy-gold-dark: #b5942b;
+}
+
+/* Text colors */
+.text-spy-gold { color: var(--spy-gold); }
+
+/* Border colors */
+.border-spy-gold { border-color: var(--spy-gold); }
+
+/* Hover effects */
+.hover-bg-spy-gold:hover { 
+  background-color: var(--spy-gold);
+  border-color: var(--spy-gold);
+}
+.hover-text-dark:hover { color: #121212 !important; }
+.hover-text-spy-gold:hover { color: var(--spy-gold) !important; }
