@@ -52,7 +52,7 @@ const CustomNavbar = () => {
           onClick={handleNavClick}
         >
           <Image 
-            src="/mWhatsApp_Image_2025-04-08_at_08.05.36__1_-removebg-preview.png" 
+            src="/WhatsApp_Image_2025-04-08_at_06.38.52-removebg-preview.png" 
             alt="007PRO Logo"
             height="40"
             width="auto"

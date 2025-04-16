@@ -28,7 +28,7 @@ const FAQSection = () => {
         <Row className="justify-content-center mb-5">
           <Col lg={8} className="text-center">
             <h6 className="text-silver mb-3 letter-spacing-2">
-              <QuestionCircle className="me-2" /> FREQUENTLY ASKED
+              <QuestionCircle className="me-2" /> FREQUENTLY ASKED QUESTIONS
             </h6>
             <div className="divider-line mx-auto bg-gold my-4"></div>
             <h2 className="display-5 fw-light text-white mb-4">

@@ -3,6 +3,7 @@ import HomePage from './pages/Home';
 import AboutPage from './pages/About';
 import ServicesPage from './pages/Services';
 import PortfolioPage from './pages/Portfolio';
+import ContactPage from './pages/Contact';
 import Layout from './components/Layout';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage/>} />
+          <Route path="/contact" element={<ContactPage />} />
           {/* Redirects */}
           <Route path="/home" element={<Navigate to="/" replace />} />
           

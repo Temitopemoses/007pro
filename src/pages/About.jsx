@@ -98,15 +98,7 @@ const AboutPage = () => {
               <p className="text-spy-silver text-center lead mb-5">
                 To amplify your project's mind share, reach visibility, hype, and trust in the community through Organic/Paid approach professional-grade services and unmatched engagement strategies.
               </p>
-              <div className="text-center">
-                <Button 
-                  variant="outline-light" 
-                  className="border-spy-gold text-spy-gold hover-bg-spy-gold hover-text-dark px-4 py-3 d-flex align-items-center mx-auto"
-                  href="#contact"
-                >
-                  License Our Services <ArrowRight className="ms-2" size={18} />
-                </Button>
-              </div>
+              
             </Col>
           </Row>
         </Container>
