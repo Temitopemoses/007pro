@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import { ChevronDown } from 'react-bootstrap-icons';
-import CustomNavbar from '../components/Navbar'
+import { Link } from 'react-router-dom';
+import CustomNavbar from '../components/Navbar';
 
 const Home = () => {
   return (
@@ -15,11 +16,10 @@ const Home = () => {
           background: "linear-gradient(135deg, #121212 0%, #1a1a1a 100%)",
           backgroundSize: "cover",
         }}
-        
       >
         {/* Animated background elements */}
         <div className="position-absolute top-0 start-0 w-100 h-100 opacity-20">
-        <div className="cyber-grid-overlay"></div>
+          <div className="cyber-grid-overlay"></div>
           <div className="position-absolute top-25 start-25 rounded-circle bg-spy-accent/20 blur-3xl" style={{ width: '24rem', height: '24rem' }}></div>
           <div className="position-absolute bottom-25 end-33 rounded-circle bg-spy-gold/10 blur-3xl" style={{ width: '16rem', height: '16rem' }}></div>
         </div>
@@ -39,19 +39,24 @@ const Home = () => {
                 </p>
                 
                 <div className="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
-                  <Button 
-                    variant="primary" 
-                    className="bg-spy-gold text-dark border-0 hover-bg-spy-gold-dark py-3 px-4 fw-medium shadow"
-                    style={{ transition: 'all 0.3s ease' }}
-                  >
-                    Get Started
-                  </Button>
-                  <Button 
-                    variant="outline-light" 
-                    className="border-spy-silver text-spy-silver hover-bg-spy-silver/10 py-3 px-4 fw-medium"
-                  >
-                    Book a Free Consultation
-                  </Button>
+                  <Link to="/services">
+                    <Button 
+                      variant="primary" 
+                      className="bg-spy-gold text-dark border-0 hover-bg-spy-gold-dark py-3 px-4 fw-medium shadow"
+                      style={{ transition: 'all 0.3s ease' }}
+                    >
+                      Get Started
+                    </Button>
+                  </Link>
+                  
+                  <Link to="/contact">
+                    <Button 
+                      variant="outline-light" 
+                      className="border-spy-silver text-spy-silver hover-bg-spy-silver/10 py-3 px-4 fw-medium"
+                    >
+                      Book a Free Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Col>
