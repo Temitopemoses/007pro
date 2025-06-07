@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { 
   LightningFill,
   ShieldFill,
@@ -66,7 +67,7 @@ const ServicesPage = () => {
       {/* Minimalist Hero */}
       <section className="min-vh-100 d-flex align-items-center position-relative bg-black">
         <div className="position-absolute top-0 end-0 w-50 h-100 bg-gradient-gold opacity-10"></div>
-        
+        <div className="cyber-grid-overlay"></div>
         <Container className="position-relative z-10">
           <Row className="py-5">
             <Col lg={6} className="pe-lg-5">
@@ -80,12 +81,14 @@ const ServicesPage = () => {
                 Classified marketing protocols for elite meme projects. 
                 No hype—just measurable results.
               </p>
+               <Link to="/contact">
               <Button 
                 variant="outline-light" 
                 className="btn-glass border-gold text-gold px-4 py-3"
               >
                 Request Dossier <ArrowRight className="ms-2" />
               </Button>
+              </Link>
             </Col>
           </Row>
         </Container>

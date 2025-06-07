@@ -35,17 +35,62 @@ const PortfolioPage = () => {
   ];
 
   const graphics = [
-    { id: 1, alt: "Meme Design 1", type: "meme" },
-    { id: 2, alt: "Website Design", type: "website" },
-    { id: 3, alt: "Banner Design", type: "banner" },
-    { id: 4, alt: "Motion Graphic", type: "animation" },
-    { id: 5, alt: "NFT Artwork", type: "nft" },
-    { id: 6, alt: "Twitter Header", type: "social" }
+    { 
+      id: 1, 
+      alt: "Meme Design 1", 
+      type: "meme", 
+      img: "/IMG-20250524-WA0013.jpg",
+      description: "Viral meme asset used for $FOMO campaign, designed to maximize shareability and engagement on Twitter."
+    },
+    { 
+      id: 2, 
+      alt: "Website Design", 
+      type: "website", 
+      img: "/IMG-20250524-WA0009.jpg",
+      description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
+    },
+    { 
+      id: 3, 
+      alt: "Banner Design", 
+      type: "banner", 
+      img: "/IMG-20250607-WA0025.jpg",
+      description: "Promotional banner crafted for stealth launch announcements and social media hype."
+    },
+    { 
+      id: 4, 
+      alt: "Motion Graphic", 
+      type: "animation", 
+      img: "/assets/portfolio/animation.gif",
+      description: "Animated motion graphic used in Twitter raids to boost visual impact and retention."
+    },
+    { 
+      id: 5, 
+      alt: "NFT Artwork", 
+      type: "nft", 
+      img: "/assets/portfolio/nft.jpg",
+      description: "Original NFT artwork created for limited edition mint, emphasizing unique style and rarity."
+    },
+    { 
+      id: 6, 
+      alt: "Twitter Header", 
+      type: "social", 
+      img: "/assets/portfolio/twitter-header.jpg",
+      description: "Custom Twitter header designed for branding and campaign consistency across social platforms."
+    }
   ];
 
   return (
+
     <div className="bg-black text-white">
+       {/* Animated background elements */}
+    <div className="position-absolute top-0 start-0 w-100 h-100 opacity-20">
+    <div className="cyber-grid-overlay"></div>
+    <div className="position-absolute top-25 start-25 rounded-circle bg-spy-accent/20 blur-3xl" style={{ width: '24rem', height: '24rem' }}></div>
+    <div className="position-absolute bottom-25 end-33 rounded-circle bg-spy-gold/10 blur-3xl" style={{ width: '16rem', height: '16rem' }}></div>
+  </div>
       {/* Hero Section */}
+     
+  
       <section className="min-vh-50 d-flex align-items-center position-relative border-bottom border-gold">
         <Container>
           <Row className="py-5">
@@ -103,47 +148,51 @@ const PortfolioPage = () => {
         </Container>
       </section>
 
-      {/* Graphics Gallery */}
-      <section className="py-5 bg-black">
-        <Container>
-          <Row className="justify-content-center mb-5">
-            <Col lg={8} className="text-center">
-              <h6 className="text-silver mb-3 letter-spacing-2">
-                <Images className="me-2" /> VISUAL ASSETS
-              </h6>
-              <div className="divider-line mx-auto bg-gold my-4"></div>
-              <h2 className="display-5 fw-light text-white mb-4">
-                <span className="text-gold">Graphics</span> & Animations
-              </h2>
-            </Col>
-          </Row>
+      /* Graphics Gallery */
+        <section className="py-5 bg-black">
+          <Container>
+            <Row className="justify-content-center mb-5">
+          <Col lg={8} className="text-center">
+            <h6 className="text-silver mb-3 letter-spacing-2">
+              <Images className="me-2" /> VISUAL ASSETS
+            </h6>
+            <div className="divider-line mx-auto bg-gold my-4"></div>
+            <h2 className="display-5 fw-light text-white mb-4">
+              <span className="text-gold">Graphics</span> & Animations
+            </h2>
+          </Col>
+            </Row>
 
-          <Row>
-            <Col lg={10} className="mx-auto">
-              <Carousel 
-                indicators={false}
-                prevIcon={<ArrowLeft size={24} className="text-gold" />}
-                nextIcon={<ArrowRight size={24} className="text-gold" />}
-                interval={3000}
-              >
-                {graphics.map((graphic) => (
-                  <Carousel.Item key={graphic.id}>
-                    <div className="graphic-preview bg-dark d-flex align-items-center justify-content-center p-5">
-                      <div className="placeholder-graphic text-silver text-center">
-                        <Images size={48} className="mb-3" />
-                        <h5>{graphic.alt}</h5>
-                        <small className="text-muted">(Sample preview - actual work shown to clients)</small>
-                      </div>
-                    </div>
-                  </Carousel.Item>
-                ))}
-              </Carousel>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            <Row>
+          <Col lg={10} className="mx-auto">
+            <Carousel 
+              indicators={false}
+              prevIcon={<ArrowLeft size={24} className="text-gold" />}
+              nextIcon={<ArrowRight size={24} className="text-gold" />}
+              interval={3000}
+            >
+              {graphics.map((graphic) => (
+            <Carousel.Item key={graphic.id}>
+              <div className="graphic-preview bg-dark d-flex flex-column align-items-center justify-content-center p-5">
+                <img
+              src={graphic.img}
+              alt={graphic.alt}
+              className="img-fluid rounded shadow mb-4"
+              style={{ maxHeight: '400px', objectFit: 'contain' }}
+                />
+                <p className="text-silver text-center mt-2" style={{ maxWidth: '600px' }}>
+              {graphic.description}
+                </p>
+              </div>
+            </Carousel.Item>
+              ))}
+            </Carousel>
+          </Col>
+            </Row>
+          </Container>
+        </section>
 
-      {/* CTA Section */}
+        {/* CTA Section */}
       <section className="py-5 bg-gradient-dark">
         <Container>
           <Row className="justify-content-center">

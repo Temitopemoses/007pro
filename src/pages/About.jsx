@@ -21,15 +21,39 @@ const AboutPage = () => {
     <>
       <CustomNavbar />
       
-      {/* Hero Section - unchanged from original */}
+      {/* Hero Section with Video Background */}
       <section 
         className="min-vh-100 d-flex align-items-center position-relative overflow-hidden"
         style={{
-          background: "linear-gradient(135deg, #121212 0%, #1a1a1a 100%)",
           paddingTop: '6rem'
         }}
       >
+        {/* Video Background */}
+        <div className="position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-100 h-100 object-fit-cover"
+            style={{ opacity: 0.15 }}
+          >
+            <source src="/videos/WhatsApp Video 2025-04-08 at 06.42.22.mp4" type="video/mp4" />
+            <source src="/videos/WhatsApp Video 2025-04-08 at 06.42.22.webm" type="video/webm" />
+            {/* Fallback image if video doesn't load */}
+            <img 
+              src="/WhatsApp Image 2025-04-08 at 06.34.42.jpeg" 
+              alt="Crypto background" 
+              className="w-100 h-100 object-fit-cover"
+            />
+          </video>
+          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-70"></div>
+        </div>
+
+      
+           {/* Animated background elements */}
         <div className="position-absolute top-0 start-0 w-100 h-100 opacity-20">
+          <div className="cyber-grid-overlay"></div>
           <div className="position-absolute top-25 start-25 rounded-circle bg-spy-accent/20 blur-3xl" 
             style={{ width: '24rem', height: '24rem' }}></div>
           <div className="position-absolute bottom-25 end-33 rounded-circle bg-spy-gold/10 blur-3xl" 
@@ -54,6 +78,7 @@ const AboutPage = () => {
           </Row>
         </Container>
       </section>
+
 
       {/* Who We Are Section - unchanged from original */}
       <section id="who-we-are" className="py-5 bg-dark">

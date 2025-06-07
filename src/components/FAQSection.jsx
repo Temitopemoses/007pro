@@ -49,7 +49,7 @@ const FAQSection = () => {
                   <Accordion.Header className="bg-dark">
                     <h5 className="text-gold mb-0">{faq.question}</h5>
                   </Accordion.Header>
-                  <Accordion.Body className="bg-black text-silver">
+                  <Accordion.Body className="bg-black text-white">
                     {faq.answer}
                   </Accordion.Body>
                 </Accordion.Item>

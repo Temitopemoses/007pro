@@ -13,6 +13,12 @@ const ContactPage = () => {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
+       {/* Animated background elements */}
+          <div className="position-absolute top-0 start-0 w-100 h-100 opacity-20">
+          <div className="cyber-grid-overlay"></div>
+          <div className="position-absolute top-25 start-25 rounded-circle bg-spy-accent/20 blur-3xl" style={{ width: '24rem', height: '24rem' }}></div>
+          <div className="position-absolute bottom-25 end-33 rounded-circle bg-spy-gold/10 blur-3xl" style={{ width: '16rem', height: '16rem' }}></div>
+        </div>
       <section className="min-vh-50 d-flex align-items-center position-relative border-bottom border-gold">
         <Container>
           <Row className="py-5">

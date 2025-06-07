@@ -72,7 +72,7 @@ const Home = () => {
                 }}
               >
                 <img
-                  src="/public/WhatsApp Image 2025-04-08 at 06.34.42.jpeg"
+                  src="/WhatsApp Image 2025-04-08 at 06.34.42.jpeg"
                   alt="MemeCoin Marketing Services"
                   className="w-100 h-100 object-fit-cover"
                   style={{ filter: 'grayscale(30%) contrast(110%)' }}
