@@ -67,7 +67,7 @@ const ContactPage = () => {
                   <h4 className="text-gold mb-0">Twitter/X</h4>
                 </div>
                 <p className="text-silver mb-3">For public inquiries:</p>
-                <a href="https://twitter.com/oo7nms" className="text-gold">@oo7nms</a>
+                <a href="https://twitter.com/oo7nms" className="text-gold">@007PRO</a>
                 <div className="mt-3">
                   <small className="text-muted">DM for secure chat</small>
                 </div>

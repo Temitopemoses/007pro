@@ -43,7 +43,7 @@ const Footer = () => {
                   <a href="#" className="text-spy-silver hover-text-spy-gold transition">
                     <Facebook size={20} />
                   </a>
-                  <a href="#" className="text-spy-silver hover-text-spy-gold transition">
+                  <a href="https://x.com/007PRO" className="text-spy-silver hover-text-spy-gold transition">
                     <Twitter size={20} />
                   </a>
                   <a href="#" className="text-spy-silver hover-text-spy-gold transition">
