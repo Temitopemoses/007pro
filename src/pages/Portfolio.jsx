@@ -46,14 +46,14 @@ const PortfolioPage = () => {
       id: 2, 
       alt: "Website Design", 
       type: "website", 
-      img: "/IMG-20250524-WA0009.jpg",
+      img: "/IMG-20250524-WA0009-removebg-preview.png",
       description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
     },
     { 
       id: 3, 
       alt: "Banner Design", 
       type: "banner", 
-      img: "/IMG-20250607-WA0025.jpg",
+      img: "/IMG-20250607-WA0025-removebg-preview.png",
       description: "Promotional banner crafted for stealth launch announcements and social media hype."
     },
     { 
