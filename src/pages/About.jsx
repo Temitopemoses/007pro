@@ -74,6 +74,17 @@ const AboutPage = () => {
                 <Globe size={20} className="me-2 text-spy-silver" />
                 <span className="text-spy-silver/80">Worldwide coverage - 24/7 operations</span>
               </div>
+            <div className="mt-4">
+              <Button 
+                 variant="primary" 
+                className="bg-spy-gold text-dark border-0 hover-bg-spy-gold-dark py-3 px-4 fw-medium shadow"
+                style={{ transition: 'all 0.3s ease' }}
+                size="lg" 
+                href="/portfolio"
+              >
+                <ArrowRight className="me-2" /> View Our Portfolio
+              </Button>
+            </div>
             </Col>
           </Row>
         </Container>

@@ -83,7 +83,7 @@ const ContactPage = () => {
                   <h4 className="text-gold mb-0">Encrypted Email</h4>
                 </div>
                 <p className="text-silver mb-3">For formal agreements:</p>
-                <a href="mailto:contact@007pro.xyz" className="text-gold">contact@007pro.xyz</a>
+                <a href="mailto:contact@007pro.xyz" className="text-gold">contact@007pro.com</a>
                 <div className="mt-3">
                   <small className="text-muted">PGP Key Available</small>
                 </div>

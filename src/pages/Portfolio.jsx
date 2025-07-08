@@ -148,7 +148,7 @@ const PortfolioPage = () => {
         </Container>
       </section>
 
-      /* Graphics Gallery */
+      {/* Graphics Gallery */}
         <section className="py-5 bg-black">
           <Container>
             <Row className="justify-content-center mb-5">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { 
-  Facebook, Twitter, Instagram, Linkedin, 
+  Facebook, Twitter, Instagram, Linkedin, Telegram,
   ArrowUpCircle, Envelope, Phone 
 } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
@@ -40,17 +40,14 @@ const Footer = () => {
               </p>
               <div className="mt-auto">
                 <div className="d-flex gap-3 mb-4">
-                  <a href="#" className="text-spy-silver hover-text-spy-gold transition">
-                    <Facebook size={20} />
-                  </a>
                   <a href="https://x.com/007PRO" className="text-spy-silver hover-text-spy-gold transition">
                     <Twitter size={20} />
                   </a>
                   <a href="#" className="text-spy-silver hover-text-spy-gold transition">
                     <Instagram size={20} />
                   </a>
-                  <a href="#" className="text-spy-silver hover-text-spy-gold transition">
-                    <Linkedin size={20} />
+                   <a href="https://t.me/OO7PRO" className="text-spy-silver hover-text-spy-gold transition">
+                    <Telegram size={20} />
                   </a>
                 </div>
                 <button 
@@ -100,7 +97,7 @@ const Footer = () => {
               <li className="d-flex align-items-start">
                 <Phone className="text-spy-gold me-3 mt-1" size={18} />
                 <a href="tel:+1234567890" className="text-spy-silver/80 hover-text-spy-gold transition text-decoration-none">
-                  +1 (234) 567-890
+                  +(447) 349-524-855
                 </a>
               </li>
             </ul>
