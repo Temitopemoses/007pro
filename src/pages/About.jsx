@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { 
   ArrowRight,
@@ -15,6 +14,7 @@ import {
 } from 'react-bootstrap-icons';
 import CustomNavbar from '../components/Navbar';
 import './AboutPage.css';
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   return (
@@ -51,47 +51,49 @@ const AboutPage = () => {
         </div>
 
       
-           {/* Animated background elements */}
-        <div className="position-absolute top-0 start-0 w-100 h-100 opacity-20">
-          <div className="cyber-grid-overlay"></div>
-          <div className="position-absolute top-25 start-25 rounded-circle bg-spy-accent/20 blur-3xl" 
-            style={{ width: '24rem', height: '24rem' }}></div>
-          <div className="position-absolute bottom-25 end-33 rounded-circle bg-spy-gold/10 blur-3xl" 
-            style={{ width: '16rem', height: '16rem' }}></div>
-        </div>
-
-        <Container className="position-relative z-10 py-5">
-          <Row className="align-items-center">
-            <Col lg={6} className="mb-5 mb-lg-0">
-              <h1 className="display-3 fw-bold mb-4 text-spy-silver">
-                <span className="text-spy-gold"><ShieldLock size={48} className="me-2 mb-2" />007</span>PRO
-              </h1>
-              <p className="lead text-spy-silver/80 mb-5 d-flex align-items-center">
-                <CurrencyBitcoin size={24} className="me-2 text-spy-gold" />
-                Your <span className="text-spy-gold mx-1">classified</span> marketing partner for blockchain domination
-              </p>
-              <div className="d-flex align-items-center">
-                <Globe size={20} className="me-2 text-spy-silver" />
-                <span className="text-spy-silver/80">Worldwide coverage - 24/7 operations</span>
-              </div>
-            <div className="mt-4">
-              <Button 
-                 variant="primary" 
-                className="bg-spy-gold text-dark border-0 hover-bg-spy-gold-dark py-3 px-4 fw-medium shadow"
-                style={{ transition: 'all 0.3s ease' }}
-                size="lg" 
-                href="/portfolio"
-              >
-                <ArrowRight className="me-2" /> View Our Portfolio
-              </Button>
+          {/* Animated background elements */}
+            <div className="position-absolute top-0 start-0 w-100 h-100 opacity-20">
+              <div className="cyber-grid-overlay"></div>
+              <div className="position-absolute top-25 start-25 rounded-circle bg-spy-accent/20 blur-3xl" 
+                style={{ width: '24rem', height: '24rem' }}></div>
+              <div className="position-absolute bottom-25 end-33 rounded-circle bg-spy-gold/10 blur-3xl" 
+                style={{ width: '16rem', height: '16rem' }}></div>
             </div>
-            </Col>
-          </Row>
-        </Container>
+
+            <Container className="position-relative z-10 py-5">
+              <Row className="align-items-center">
+                <Col lg={6} className="mb-5 mb-lg-0">
+                  <h1 className="display-3 fw-bold mb-4 text-spy-silver">
+              <span className="text-spy-gold"><ShieldLock size={48} className="me-2 mb-2" />007</span>PRO
+                  </h1>
+                  <p className="lead text-spy-silver/80 mb-5 d-flex align-items-center">
+              <CurrencyBitcoin size={24} className="me-2 text-spy-gold" />
+              Your <span className="text-spy-gold mx-1">classified</span> marketing partner for blockchain domination
+                  </p>
+                  <div className="d-flex align-items-center">
+              <Globe size={20} className="me-2 text-spy-silver" />
+              <span className="text-spy-silver/80">Worldwide coverage - 24/7 operations</span>
+                  </div>
+                <div className="mt-4">
+                  {/* Use Link from react-router-dom instead of lowercase link */}
+                  {/* If you don't use react-router-dom, replace Link with <a href=""> */}
+                  {/* import { Link } from 'react-router-dom'; at the top if needed */}
+                  <Link to="/Portfolio">
+                    <Button 
+                      variant="primary" 
+                      className="bg-spy-gold text-dark border-0 hover-bg-spy-gold-dark py-3 px-4 fw-medium shadow"
+                      style={{ transition: 'all 0.3s ease' }}
+                      size="lg"
+                    >
+                      <ArrowRight className="me-2" /> View Our Portfolio
+                    </Button>
+                  </Link>
+                </div>
+              </Col>
+            </Row>
+          </Container>
       </section>
-
-
-      {/* Who We Are Section - unchanged from original */}
+      {/* Who We Are Section */}
       <section id="who-we-are" className="py-5 bg-dark">
         <Container>
           <Row className="justify-content-center">
