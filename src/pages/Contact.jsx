@@ -38,61 +38,6 @@ const ContactPage = () => {
         </Container>
       </section>
 
-      {/* Contact Methods */}
-      <section className="py-5 bg-dark">
-        <Container>
-          <Row className="g-4">
-            <Col lg={4}>
-              <div className="contact-method p-4 h-100 border border-gold">
-                <div className="d-flex align-items-center mb-4">
-                  <div className="icon-wrapper bg-gold-soft me-3">
-                    <Telegram className="text-gold" size={24} />
-                  </div>
-                  <h4 className="text-gold mb-0">Telegram</h4>
-                </div>
-                <p className="text-silver mb-3">For immediate response:</p>
-                <a href="https://t.me/oo7inc" className="text-gold">@oo7inc</a>
-                <div className="mt-3">
-                  <small className="text-muted">Operational 24/7</small>
-                </div>
-              </div>
-            </Col>
-
-            <Col lg={4}>
-              <div className="contact-method p-4 h-100 border border-gold">
-                <div className="d-flex align-items-center mb-4">
-                  <div className="icon-wrapper bg-gold-soft me-3">
-                    <Twitter className="text-gold" size={24} />
-                  </div>
-                  <h4 className="text-gold mb-0">Twitter/X</h4>
-                </div>
-                <p className="text-silver mb-3">For public inquiries:</p>
-                <a href="https://twitter.com/oo7nms" className="text-gold">@007PRO</a>
-                <div className="mt-3">
-                  <small className="text-muted">DM for secure chat</small>
-                </div>
-              </div>
-            </Col>
-
-            <Col lg={4}>
-              <div className="contact-method p-4 h-100 border border-gold">
-                <div className="d-flex align-items-center mb-4">
-                  <div className="icon-wrapper bg-gold-soft me-3">
-                    <EnvelopeFill className="text-gold" size={24} />
-                  </div>
-                  <h4 className="text-gold mb-0">Encrypted Email</h4>
-                </div>
-                <p className="text-silver mb-3">For formal agreements:</p>
-                <a href="mailto:contact@007pro.xyz" className="text-gold">contact@007pro.com</a>
-                <div className="mt-3">
-                  <small className="text-muted">PGP Key Available</small>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
       {/* Contact Form */}
       <section className="py-5 bg-black">
         <Container>
