@@ -56,27 +56,8 @@ const PortfolioPage = () => {
       img: "/IMG-20250607-WA0025-removebg-preview.png",
       description: "Promotional banner crafted for stealth launch announcements and social media hype."
     },
-    { 
-      id: 4, 
-      alt: "Motion Graphic", 
-      type: "animation", 
-      img: "/assets/portfolio/animation.gif",
-      description: "Animated motion graphic used in Twitter raids to boost visual impact and retention."
-    },
-    { 
-      id: 5, 
-      alt: "NFT Artwork", 
-      type: "nft", 
-      img: "/assets/portfolio/nft.jpg",
-      description: "Original NFT artwork created for limited edition mint, emphasizing unique style and rarity."
-    },
-    { 
-      id: 6, 
-      alt: "Twitter Header", 
-      type: "social", 
-      img: "/assets/portfolio/twitter-header.jpg",
-      description: "Custom Twitter header designed for branding and campaign consistency across social platforms."
-    }
+    
+  
   ];
 
   return (
