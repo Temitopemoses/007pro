@@ -74,34 +74,34 @@ const PortfolioPage = () => {
           id: 3,
           alt: "Banner Design",
           type: "banner",
-          img: "public/Tigerwood.png",
+          img: "/Tigerwood.png",
           description: "Promotional banner crafted for stealth launch announcements and social media hype."
         },
         {
           id: 4,
           alt: "Ai Animated Video",
           type: "banner",
-          img: "public/twiter1.png",
+          img: "/twiter1.png",
           description: "Twitter promotion for Tiger backwood, showcasing the project's unique features and community engagement."
         },
         {
           id: 5,
           alt:"twitter result",
           type: "banner",
-          img: "public/twitter2.png",
+          img: "/twitter2.png",
           description: "Twitter promotion for Tiger backwood, showcasing the project's unique features and community engagement."
         },
         {
           id: 6,
           alt: "telegram",
           type: "banner",
-          img: "public/Telegram2.png",
+          img: "/Telegram2.png",
           description: "Tiger backwood Telegram member growth analytics"
         },
         {
         id: 6,
           alt: "telegram",
-          type: "banner",
+          type: "banner1",
           img: "/Telegram3.png",
           description: "Tiger backwood Telegram member growth analytics"
         },
