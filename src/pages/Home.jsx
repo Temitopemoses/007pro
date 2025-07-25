@@ -61,14 +61,15 @@ const Home = () => {
               </div>
             </Col>
 
-            <Col lg={6} className="d-flex justify-content-center">
+            <Col lg={6} className="d-flex justify-content-center align-items-center">
               <div
-                className="hero-image-container rounded-4 overflow-hidden shadow-lg"
                 style={{
+                  position: 'relative',
                   width: '100%',
-                  maxWidth: '500px',
-                  height: '400px',
-                  border: '1px solid rgba(212, 175, 55, 0.3)'
+                  aspectRatio: '16/9',
+                  overflow: 'hidden',
+                  borderRadius: '1rem',
+                  backgroundColor: '#000',
                 }}
               >
                 <video
@@ -77,8 +78,17 @@ const Home = () => {
                   loop
                   muted
                   playsInline
-                  className="w-100 h-100 object-fit-cover"
-                  style={{ filter: 'grayscale(30%) contrast(110%)', objectFit: 'cover', width: '100%', height: '100%' }}
+                  style={{
+                    objectFit: 'cover',
+                    width: '100%',
+                    height: '100%',
+                    display: 'block',
+                    filter: 'grayscale(30%) contrast(110%)',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                  }}
+                  poster="/fallback_image.jpg"
                 />
               </div>
             </Col>
