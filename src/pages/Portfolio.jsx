@@ -14,53 +14,6 @@ const PortfolioPage = () => {
   // Case studies with graphics per mission
   const caseStudies = [
     {
-      title: "$FOMO (Captain Fomo)",
-      description: "From zero to $50K MC in 8 minutes || Stealth Launch",
-      details: [
-        "Coordinated viral Twitter raid campaign",
-        "Designed stealth launch strategy",
-        "Managed CT hype waves pre/post-launch",
-        "Result: 500+ holders in first hour"
-      ],
-      icon: <LightningFill className="text-gold" size={48} />,
-      graphics: [
-        {
-          id: 1,
-          alt: "Meme Design 1",
-          type: "meme",
-          img: "/IMG-20250524-WA0013.jpg",
-          description: "Viral meme asset used for $FOMO campaign, designed to maximize shareability and engagement on Twitter."
-        },
-        {
-        id: 2,
-          alt: "Website Design",
-          type: "website",
-          img: "/IMG-20250524-WA0009-removebg-preview.png",
-          description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
-        }
-        ]
-    },
-    {
-      title: "$SQUIDGUY CTO",
-      description: "Full website + raid management for NFT mint",
-      details: [
-        "Designed and developed custom minting site",
-        "Created viral meme assets",
-        "Managed raid coordination teams",
-        "Result: 2.4 ETH volume first 24h"
-      ],
-      icon: <RocketFill className="text-gold" size={48} />,
-      graphics: [
-        {
-          id: 2,
-          alt: "Website Design",
-          type: "website",
-          img: "/IMG-20250524-WA0009-removebg-preview.png",
-          description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
-        }
-      ]
-    },
-    {
       title: "Tiger backwood",
       description: "A meme coin project",
       details: [
@@ -111,7 +64,70 @@ const PortfolioPage = () => {
           type: "banner",
           img: "/telegram1.png",
           description: "Tiger backwood Testimonials"
+        },
+    
+    {
+      title: "$SQUIDGUY CTO",
+      description: "Full website + raid management for NFT mint",
+      details: [
+        "Designed and developed custom minting site",
+        "Created viral meme assets",
+        "Managed raid coordination teams",
+        "Result: 2.4 ETH volume first 24h"
+      ],
+      icon: <RocketFill className="text-gold" size={48} />,
+      graphics: [
+        {
+          id: 7,
+          alt: "Website Design",
+          type: "banner",
+          img: "/squidguy.png",
+          description: "Promotional banner crafted for stealth launch announcements and social media hype."
+        },
+        {
+          id: 2,
+          alt: "Website Design",
+          type: "website",
+          img: "/IMG-20250524-WA0009-removebg-preview.png",
+          description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
+        },
+        {
+          id: 2,
+          alt: "Website Design",
+          type: "website",
+          img: "/weebs.png",
+          description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
         }
+      ]
+    },
+    {
+      
+      title: "$FOMO (Captain Fomo)",
+      description: "From zero to $50K MC in 8 minutes || Stealth Launch",
+      details: [
+        "Coordinated viral Twitter raid campaign",
+        "Designed stealth launch strategy",
+        "Managed CT hype waves pre/post-launch",
+        "Result: 500+ holders in first hour"
+      ],
+      icon: <LightningFill className="text-gold" size={48} />,
+      graphics: [
+        {
+          id: 1,
+          alt: "Meme Design 1",
+          type: "meme",
+          img: "/IMG-20250524-WA0013.jpg",
+          description: "Viral meme asset used for $FOMO campaign, designed to maximize shareability and engagement on Twitter."
+        },
+        {
+        id: 2,
+          alt: "Website Design",
+          type: "website",
+          img: "/IMG-20250524-WA0009-removebg-preview.png",
+          description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
+        }
+        ]
+    },
       ]
     }
   ];
@@ -199,13 +215,13 @@ const PortfolioPage = () => {
                 {/* Mission navigation */}
                 <div className="d-flex justify-content-between mt-4">
                   <button
-                    className="btn btn-outline-warning"
+                    className="btn btn-outline-warning me-2"
                     onClick={() => handleMissionChange(-1)}
                   >
                     <ArrowLeft className="me-2" /> Prev Mission
                   </button>
                   <button
-                    className="btn btn-outline-warning"
+                    className="btn btn-outline-warning ms-2"
                     onClick={() => handleMissionChange(1)}
                   >
                     Next Mission <ArrowRight className="ms-2" />
