@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { img } from "framer-motion/client";
+import { useState } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import {
   LightningFill,
@@ -73,8 +74,43 @@ const PortfolioPage = () => {
           id: 3,
           alt: "Banner Design",
           type: "banner",
-          img: "/IMG-20250607-WA0025-removebg-preview.png",
+          img: "public/Tigerwood.png",
           description: "Promotional banner crafted for stealth launch announcements and social media hype."
+        },
+        {
+          id: 4,
+          alt: "Ai Animated Video",
+          type: "banner",
+          img: "public/twiter1.png",
+          description: "Twitter promotion for Tiger backwood, showcasing the project's unique features and community engagement."
+        },
+        {
+          id: 5,
+          alt:"twitter result",
+          type: "banner",
+          img: "public/twitter2.png",
+          description: "Twitter promotion for Tiger backwood, showcasing the project's unique features and community engagement."
+        },
+        {
+          id: 6,
+          alt: "telegram",
+          type: "banner",
+          img: "public/Telegram2.png",
+          description: "Tiger backwood Telegram member growth analytics"
+        },
+        {
+        id: 6,
+          alt: "telegram",
+          type: "banner",
+          img: "/Telegram3.png",
+          description: "Tiger backwood Telegram member growth analytics"
+        },
+        {
+          id: 6,
+          alt: "telegram",
+          type: "banner",
+          img: "/Telegram1.png",
+          description: "Tiger backwood Testimonials"
         }
       ]
     }
@@ -163,13 +199,13 @@ const PortfolioPage = () => {
                 {/* Mission navigation */}
                 <div className="d-flex justify-content-between mt-4">
                   <button
-                    className="btn btn-outline-gold"
+                    className="btn btn-outline-warning"
                     onClick={() => handleMissionChange(-1)}
                   >
                     <ArrowLeft className="me-2" /> Prev Mission
                   </button>
                   <button
-                    className="btn btn-outline-gold"
+                    className="btn btn-outline-warning"
                     onClick={() => handleMissionChange(1)}
                   >
                     Next Mission <ArrowRight className="ms-2" />
@@ -210,14 +246,14 @@ const PortfolioPage = () => {
                 </p>
                 <div className="d-flex justify-content-center mt-3 gap-3">
                   <button
-                    className="btn btn-outline-gold"
+                    className="btn btn-outline-warning"
                     onClick={() => handleGraphicChange(-1)}
                     disabled={currentMission.graphics.length < 2}
                   >
                     <ArrowLeft className="me-2" /> Prev Graphic
                   </button>
                   <button
-                    className="btn btn-outline-gold"
+                    className="btn btn-outline-warning"
                     onClick={() => handleGraphicChange(1)}
                     disabled={currentMission.graphics.length < 2}
                   >
