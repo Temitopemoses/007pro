@@ -40,10 +40,10 @@ const Footer = () => {
               </p>
               <div className="mt-auto">
                 <div className="d-flex gap-3 mb-4">
-                  <a href="https://x.com/007PRO" className="text-spy-silver hover-text-spy-gold transition">
+                  <a href="https://x.com/0O7PRO" className="text-spy-silver hover-text-spy-gold transition">
                     <Twitter size={20} />
                   </a>
-                  <a href="#" className="text-spy-silver hover-text-spy-gold transition">
+                  <a href="https://www.instagram.com/oo7pro" className="text-spy-silver hover-text-spy-gold transition">
                     <Instagram size={20} />
                   </a>
                    <a href="https://t.me/OO7PRO" className="text-spy-silver hover-text-spy-gold transition">
@@ -90,13 +90,13 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li className="mb-3 d-flex align-items-start">
                 <Envelope className="text-spy-gold me-3 mt-1" size={18} />
-                <a href="mailto:contact@007pro.com" className="text-spy-silver/80 hover-text-spy-gold transition text-decoration-none">
-                  contact@007pro.com
+                <a href="mailto:contact@oo7pro.com" className="text-spy-silver/80 hover-text-spy-gold transition text-decoration-none">
+                  contact@oo7pro.com
                 </a>
               </li>
               <li className="d-flex align-items-start">
                 <Phone className="text-spy-gold me-3 mt-1" size={18} />
-                <a href="tel:+1234567890" className="text-spy-silver/80 hover-text-spy-gold transition text-decoration-none">
+                <a href="tel:+447349524855" className="text-spy-silver/80 hover-text-spy-gold transition text-decoration-none">
                   +(447) 349-524-855
                 </a>
               </li>
