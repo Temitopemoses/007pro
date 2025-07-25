@@ -1,4 +1,3 @@
-import { img } from "framer-motion/client";
 import { useState } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import {
@@ -52,20 +51,21 @@ const PortfolioPage = () => {
           description: "Tiger backwood Telegram member growth analytics"
         },
         {
-        id: 6,
+          id: 7,
           alt: "telegram",
           type: "banner1",
           img: "/Telegram3.png",
           description: "Tiger backwood Telegram member growth analytics"
         },
         {
-          id: 6,
+          id: 8,
           alt: "telegram",
           type: "banner",
           img: "/telegram1.png",
           description: "Tiger backwood Testimonials"
-        },
-    
+        }
+      ]
+    },
     {
       title: "$SQUIDGUY CTO",
       description: "Full website + raid management for NFT mint",
@@ -78,21 +78,21 @@ const PortfolioPage = () => {
       icon: <RocketFill className="text-gold" size={48} />,
       graphics: [
         {
-          id: 7,
+          id: 9,
           alt: "Website Design",
           type: "banner",
           img: "/squidguy.png",
           description: "Promotional banner crafted for stealth launch announcements and social media hype."
         },
         {
-          id: 2,
+          id: 10,
           alt: "Website Design",
           type: "website",
           img: "/IMG-20250524-WA0009-removebg-preview.png",
           description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
         },
         {
-          id: 2,
+          id: 11,
           alt: "Website Design",
           type: "website",
           img: "/weebs.png",
@@ -101,7 +101,6 @@ const PortfolioPage = () => {
       ]
     },
     {
-      
       title: "$FOMO (Captain Fomo)",
       description: "From zero to $50K MC in 8 minutes || Stealth Launch",
       details: [
@@ -113,21 +112,19 @@ const PortfolioPage = () => {
       icon: <LightningFill className="text-gold" size={48} />,
       graphics: [
         {
-          id: 1,
+          id: 12,
           alt: "Meme Design 1",
           type: "meme",
           img: "/IMG-20250524-WA0013.jpg",
           description: "Viral meme asset used for $FOMO campaign, designed to maximize shareability and engagement on Twitter."
         },
         {
-        id: 2,
+          id: 13,
           alt: "Website Design",
           type: "website",
           img: "/IMG-20250524-WA0009-removebg-preview.png",
           description: "Custom minting website for $SQUIDGUY, featuring interactive UI and seamless wallet integration."
         }
-        ]
-    },
       ]
     }
   ];
@@ -221,7 +218,7 @@ const PortfolioPage = () => {
                     <ArrowLeft className="me-2" /> Prev Mission
                   </button>
                   <button
-                    className="btn btn-outline-warning ms-2"
+                    className="btn btn-outline-warning me-2"
                     onClick={() => handleMissionChange(1)}
                   >
                     Next Mission <ArrowRight className="ms-2" />
