@@ -109,7 +109,7 @@ const PortfolioPage = () => {
           id: 6,
           alt: "telegram",
           type: "banner",
-          img: "/Telegram1.png",
+          img: "/telegram1.png",
           description: "Tiger backwood Testimonials"
         }
       ]
